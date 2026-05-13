@@ -88,25 +88,25 @@
 \begin{document}
 \pagenumbering{gobble}
 
-%%%% 利用tikz来定位照片
+%%%% 利用tikz来定位学校Logo (已去除个人照片)
 \begin{tikzpicture}[remember picture, overlay] 
-    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=3cm]{avatar.jpg}};
-  \end{tikzpicture}%
-  %%%% 利用tikz来定位学校Logo，这里只在第一页显示
-  \begin{tikzpicture}[remember picture, overlay] 
     \node[anchor = north west] at ($(current page.north west)+(0.5cm,+1.0cm)$) {\includegraphics[height=6cm]{zju.png}};
-  \end{tikzpicture}%
-\centerline{\LARGE\bfseries{胡豆}} 
+\end{tikzpicture}%
 
-\centerline{\normalsize{\faPhone\ 111-1111-1111 \quad \faEnvelopeO\ \href{mailto:3230100000@zju.edu.cn}{3230100000@zju.edu.cn}}} 
+\centerline{\LARGE\bfseries{桑 \quad 晟}} 
 
-\centerline{\normalsize{\faGithubSquare\ \href{https://github.com/maksymilan}{https://github.com/maksymilan} \quad \faRssSquare\ \href{https://maksymilan.github.io/}{https://maksymilan.github.io}}} 
+\vspace{0.5em}
+\centerline{\normalsize{\faPhone\ 182-6820-5288 \quad \faEnvelopeO\ \href{mailto:3230103447@zju.edu.cn}{3230103447@zju.edu.cn}}} 
+
+\vspace{0.2em}
+\centerline{\normalsize{出生年月：2005.03 \quad \faMapMarker\ 籍贯：浙江省长兴县}} 
     
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}    
-\textbf{浙江大学} \hfill 2023.9 -- 至今\\[0.5em] % 标题和正文间加一点距离
-CC98烂坑挖掘工程与技术\quad 大二 
-\begin{itemize}[nosep]
-    \item 相关课程：《烂坑挖掘及基础》、《高级挖坑技巧》、《烂坑数理统计》
+\textbf{浙江大学} \hfill 2023.09 -- 至今\\[0.2em] 
+计算机科学与技术学院 - 计科2305 \hfill 浙江杭州 
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{学业成绩：}GPA：3.96/4.00 \quad 百分制：90.20
+    \item \textbf{语言水平：}CET-6：622
 \end{itemize}
 
 \section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 项目经历}
@@ -136,20 +136,18 @@ CC98烂坑挖掘工程与技术\quad 大二
 
 \section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 技术栈}
 \begin{itemize}[nosep]
-    \item \textbf{编程语言：} \textbf{Go}, Python, C++
-    \item \textbf{开发工具：} SSH, Git, Vim, MakeFile,LaTex
-    \item \textbf{操作系统：} Linux
+    \item \textbf{编程语言：} C, C++, Python, Verilog, RISC-V
+    \item \textbf{开发工具：} SSH, Git, MarkDown, MakeFile
+    \item \textbf{操作系统：} Linux, Windows
 \end{itemize}
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faList}\ 获奖情况}
 \begin{itemize}
-    \item CC98年度用户 \hfill 2023.12
+    \item 2024-2025学年浙江大学二等奖学金 
+    \item 2023-2024学年浙江大学三等奖学金 
     
 \end{itemize}
     
-\section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 其他}
-\begin{itemize}[parsep=0.5ex]
-    \item \textbf{技术博客：} \href{https://maksymilan.github.io/}{https://maksymilan.github.io/}
-    \item \textbf{GitHub：} \href{https://github.com/maksymilan}{https://github.com/maksymilan} 
-    \item \textbf{英语水平：} CET-4, CET-6
-\end{itemize}
+\section{\makebox[\widthof{\faFlag}][c]{\color{CVBlue}\faFlag}\ 学生工作}
+\textbf{竺可桢学院团委宣传部} \quad 干事 \hfill 2023.09 -- 2024.06
+
 \end{document}
