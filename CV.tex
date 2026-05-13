@@ -96,10 +96,10 @@
 \centerline{\LARGE\bfseries{桑 \quad 晟}} 
 
 \vspace{0.5em}
-\centerline{\normalsize{\faPhone\ 182-6820-5288 \quad \faEnvelopeO\ \href{mailto:3230103447@zju.edu.cn}{3230103447@zju.edu.cn}}} 
+\centerline{\normalsize{电话：182-6820-5288 \quad 邮箱：3230103447@zju.edu.cn}} 
 
 \vspace{0.2em}
-\centerline{\normalsize{出生年月：2005.03 \quad \faMapMarker\ 籍贯：浙江省长兴县}} 
+\centerline{\normalsize{出生年月：2005.03 \quad 籍贯：浙江省长兴县}} 
     
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}    
 \textbf{浙江大学} \hfill 2023.09 -- 至今\\[0.2em] 
@@ -109,29 +109,18 @@
     \item \textbf{语言水平：}CET-6：622
 \end{itemize}
 
-\section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 项目经历}
-
-% --- 第一个项目 ---
-% 将标题行末尾的 \\ 替换为 \titlebreak 命令
-\textbf{98烂坑风控与可视化作战平台} \hfill 2024.08 -- 至今 \titlebreak
-项目描述：为维护cc98社区的讨论纯度、净化“心灵之约”版块风气，本项目旨在对“烂坑”进行科学、严谨的量化分析，并引入\textbf{大语言模型(LLM)}对烂坑帖进行\textbf{自动化情感极性与“离谱指数”标注}。
-% 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
+\textbf{ZJU 3DV 实验室} \quad 科研实习生 \hfill 2025.10 -- 至今
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{数据与后端}：运用 \textbf{Go} 语言及 \textbf{GORM} 框架，实现对全站“烂坑”帖的7x24小时全天候\textbf{抓取}与\textbf{入库}(MySQL)。
-    \item \textbf{可视化前端}：采用原生 \textbf{HTML/CSS/JS} 构建了“烂坑”实时监控\textbf{作战大屏}。实现了坑主成分分析、挖坑热力图、年度烂坑王榜单等\textbf{可视化图表}，并通过 \textbf{AJAX} 异步刷新，确保数据洞察的实时性。
-    \item \textbf{核心产出}：全面掌握了从\textbf{数据采集、清洗、LLM标注到可视化分析}的“反烂坑”全链路技术。
+    \item \textbf{基础知识学习}：系统学习 EECS498 ，复现了 \textbf{NeRF} 架构，并针对体渲染过程实现代码级优化与加速。
+    \item \textbf{EQA探索}：\item \textbf{EQA探索}：在具身仿真环境中对主流算法进行跑通测试与优化尝试；探索并初步设计“Long-term EQA Benchmark”，聚焦智能体长时记忆与多事件推理能力的评估方案。
+    \item \textbf{实例级角点检测网络}：构建端到端目标位姿估计流水线，利用三维生成模型与 HCCEPose 脚本渲染并构造合成训练数据集；参考 BoxDreamer 架构，设计并实现了基于 ResNet 的单目实例级检测网络，通过预测目标 8 个角点的 Heatmap 实现角点检测。
 \end{itemize}
 
-% 使用 \projectsep 命令来分隔两个项目
-\projectsep
-
-% --- 第二个项目 ---
-\textbf{AIGC驱动的超进化自动挖坑机 (Agent)} \hfill 2025.02 -- 至今 \titlebreak
-项目描述：为探索心灵版规的边界，以及测试版主锁沉反应速度的极限，本项目基于\textbf{多智能体协作(MCP)与LLM}技术，开发了一款能\textbf{自主“挖坑”与“互坑”}的AI Agent。
-\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{并发与调度}：后端采用 \textbf{Go} 语言，充分利用 \textbf{Goroutine} 和 \textbf{Channel} 的高并发模型，模拟\textbf{用户并发在线}，执行定时挖坑，确保挖坑行动的\textbf{隐蔽性}与\textbf{高效性}。
-    \item \textbf{实时监控与响应}：运用 \textbf{WebSocket} 协议实现了对目标帖子的\textbf{实时监听与交互}。确保在烂坑被识破的第一时间，Agent能光速完成\textbf{“lktp”}或\textbf{反向钓鱼}操作，展现出极高的AI博弈能力。
-    \item \textbf{可视化GUI}：前端使用 \textbf{React} 框架构建了\textbf{后台管理的可视化面板 (Admin Panel)}。可一键下达挖坑指令、动态调整Agent的\textbf{指令}、并实时监控数据。
+\section{\makebox[\widthof{\faLaptop}][c]{\color{CVBlue}\faLaptop}\ 核心专业课项目}
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep, parsep=0.5ex]
+    \item \textbf{MiniSQL}：基于 C++ 从零构建关系型数据库，实现了表堆存储引擎、火山模型 SQL 执行器及支持严格两阶段锁与 DFS 死锁检测的并发控制管理器。
+    \item \textbf{操作系统核心实验}：基于 RISC-V 64 架构进行内核开发，完整实现了线程调度与上下文切换、虚拟内存管理、用户态 Shell 交互及底层文件系统设计。
+    \item \textbf{计算机体系结构核心实验}：设计并实现了支持 RV32I 指令集的流水线 CPU，集成了异常中断处理与 Cache 缓存机制，并运用计分板算法实现了指令的动态调度。
 \end{itemize}
 
 \section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 技术栈}
