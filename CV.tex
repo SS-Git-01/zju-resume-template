@@ -115,12 +115,12 @@
 \end{itemize}
 
 \section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 科研经历}
-\textbf{ZJU 3DV 实验室} \quad 科研实习生 \hfill 2025.10 -- 至今
+\textbf{ZJU 3DV 周晓巍老师实验室} \quad 科研实习生 \hfill 2025.10 -- 至今
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{基础知识学习}：系统学习 EECS498 ，复现了 NeRF 架构，并针对体渲染过程实现代码级优化与加速。
-    \item \textbf{EQA探索}：在具身仿真环境中对主流算法进行跑通测试与优化尝试；探索并初步设计 Long-term EQA Benchmark ，聚焦智能体长时记忆与多事件推理能力的评估方案。
-    \item \textbf{实例级角点检测网络}：构建端到端目标位姿估计流水线，利用三维生成模型与 HCCEPose 脚本渲染并构造合成训练数据集；参考 BoxDreamer 架构，设计并实现了基于 ResNet 的单目实例级检测网络，通过预测目标 8 个角点的 Heatmap 实现角点检测。
-    \item \textbf{具身智能与机器人学习}：围绕强化学习与人形机器人 Local Motion 开展文献调研与基础学习，了解 PPO、运动模仿与运动跟踪等基本方法，并调研人形机器人全身运动控制与通用运动 Tracker 的相关研究进展。
+    \item \textbf{实例级角点检测与 Synthetic-to-Real 优化}：
+    面向真实视频中的单目目标角点检测任务，搭建从三维模型渲染、合成数据生成到网络训练与真实视频推理的完整流水线。基于 HCCEPose 构建 BOP 格式训练数据，参考 BoxDreamer 设计基于 ResNet-34 的实例级检测网络，以 $H\times W\times 8$ Heatmap 预测目标 8 个角点；针对合成数据与真实场景间的 domain gap，围绕视角分布、背景、纹理、材质、光照及三维模型精度等因素进行多轮实验优化，并结合 SAM2 完成真实视频中的目标裁剪与角点检测。
+    \item \textbf{EQA 实验分析与长期记忆评测探索}：
+    基于 Express-Bench 在具身仿真环境中完成数百条 EQA 问题的批量测试，统计回答正确率并对失败案例进行分类分析，探索智能体在感知、探索与推理环节的能力瓶颈；在此基础上，针对现有 EQA 对长时记忆与多事件推理能力评估不足的问题，提出 Long-term EQA Benchmark 的初步设想，围绕空间记忆、视觉记忆、状态变化与多事件推理等能力设计任务类型与评测维度。
 \end{itemize}
 
 \section{\makebox[\widthof{\faLaptop}][c]{\color{CVBlue}\faLaptop}\ 核心专业课项目}
